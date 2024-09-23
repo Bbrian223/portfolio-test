@@ -1,17 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi portfolio</title>
     <link rel="stylesheet" href="styles.css">
+</head>
 
-    </head>
-    
-    <body>
+<body>
+    <nav class="menu">
+        <div class="contenedor-menu">
+            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#conocimientos">Conocimientos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
 
-    
+    <header class="header">
+        <div class="presentacion">
+            <h1>Barrera Brian</h1>
+            <h2>Desarrollador .NET</h2>
+        </div>
+    </header>
 
-        <script src="main.js" type="text/javascript"></script>
-    </body>
-</html>
+    <main class="main">
+        <section class="seccion">
+            <h2 id="sobre-mi" class="titulo" >Sobre mi</h2>
+
+            <div class="cajaTexto">
+                <img class="fotoPerfil" src="imag/foto-perfil.png" alt="Foto de perfil">
+
+                <p class="descripcion" >
+                    ¡Hola! Soy Brian, un apasionado desarrollador .NET junior en camino hacia el mundo de la tecnología. 
+                    Actualmente soy estudiante de la tecnicatura universitaria en programación, donde estoy adquiriendo 
+                    las habilidades y conocimientos necesarios para convertirme en un profesional en el campo del 
+                    desarrollo de software.<br><br>
+
+                    A pesar de no tener experiencia laboral previa, me considero una persona proactiva y con una gran capacidad 
+                    de aprendizaje. Siempre busco nuevas oportunidades para adquirir conocimiento y mejorar mis habilidades. 
+                    Mi pensamiento lógico y buen criterio me permiten abordar los desafíos de manera efectiva, lo que creo que 
+                    es fundamental en el ámbito de la programación.<br><br>
+
+                    Mi objetivo es integrarme al mundo IT como desarrollador y contribuir a proyectos innovadores. Estoy 
+                    emocionado por lo que el futuro tiene reservado y espero poder colaborar con otros profesionales 
+                    y aprender de ellos en el camino.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="proyectos" class="seccion-proyectos">
+            <h2 class="titulo" >Proyectos</h2>
+            <div class="contenedor-proyectos">
+                <div class="proyecto">
+                    <img class="foto-proyecto" src="imag/proyecto1.png" alt="Gestion de comercio">
+                    <h3>Gestion de venta de Comercio</h3>
+                    <a href="https://github.com/aylindaiana/tp-winform-equipo-3B.git" target="_blank">Ver en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <img class="foto-proyecto" src="imag/proyecto2.png" alt="Gestion de Bar">
+                    <h3>Gestion de venta y stock de un Bar</h3>
+                    <a href="https://github.com/Bbrian223/Laboratorio-II-Gestion-de-Bar.git" target="_blank">Ver en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <img class="foto-proyecto" src="imag/proyecto3.png" alt="Portfolio personal">
+                    <h3>Portfolio personal</h3>
+                    <a href="https://github.com/Bbrian223/portfolio-test.git" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="conocimientos" class="seccion-conocimientos">
+            <h2 class="titulo">Conocimientos</h2>
+            <div>
+                <img class="img-conocimientos" src="imag/logo-C-sharp.png" alt="C#">
+                <img class="img-conocimientos" src="imag/logo.net.png" alt=".net">
+                <img class="img-conocimientos" src="imag/logo-C++.png" alt="C++">
+                <img class="img-conocimientos" src="imag/logo-MicrosoftSql.png" alt="Microsoft Sql">
+                <img class="img-conocimientos" src="imag/logo-Html.png" alt="Html">
+                <img class="img-conocimientos" src="imag/logo-css.png" alt="Css">
+                
+            </div>
+        </section>    
+    </main>
+
+    <section id="contacto" class="contacto">
+        <h2 style="padding: 20px; font-size: 40px;">Contacto</h2>
+        <form id="contacto-form" class="contacto-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="form-status" style="padding: 20px;"></p>
+    </section>
+
+    <footer style="color: black;">
+        <p>2024 Mi Portfolio | Hecho con HTML, CSS y JavaScript</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brian-alex-barrera-gomez-206576191/" target="_blank">
+                <img src="https://img.icons8.com/material-outlined/24/000000/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Bbrian223" target="_blank">
+                <img src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
